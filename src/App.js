@@ -12,15 +12,17 @@ const App = () => {
     <div className='app'>
       <BrowserRouter>
         <Header />
-        <Routes>
-          <Route path="/" exact>
-            <Route index element={<Home type="random" />} />
-            <Route path="trending" element={<Home type="trend" />} />
-            <Route path="subscriptions" element={<Home type="sub" />} />
-            <Route path="movie/:imdbID" element={<MovieDetail />} />
-            <Route path="*" element={<PageNotFound />} />
-          </Route>
-        </Routes>
+        <div className='container'>
+          <Routes>
+            <Route path="/" exact>
+              <Route index element={<Home type="random" />} />
+              <Route path="trending" element={<Home type="trend" />} />
+              <Route path="subscriptions" element={<Home type="sub" />} />
+              <Route path="movie/:imdbID" element={<MovieDetail />} />
+              <Route path="*" element={<PageNotFound />} />
+            </Route>
+          </Routes>
+        </div>
         <Footer />
       </BrowserRouter>
     </div>
