@@ -1,0 +1,44 @@
+@import "../../constants/colors.scss";
+.header {
+    background-color: $secondary-color;
+    height: 72px;
+    padding: 0 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    color: $primary-font;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: $primary-color;
+    color: $primary-font;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.search input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0 10px;
+    color: $primary-font;
+}
+
+.user-info__avatar,
+.user-info__avatar img {
+    width: 40px;
+    height: 40px;
+}

@@ -1,0 +1,26 @@
+@import '../../constants/colors.scss';
+.footer {
+    background-color: $secondary-color;
+    color: $primary-font;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 46px;
+}
+
+.footer__logo,
+.footer__logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer__copyright {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
